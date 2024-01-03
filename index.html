@@ -1,11 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VLC Print Stream</title>
+  <title>Flash Streaming from VLC video</title>
+  <script src="flowplayer-3.1.4.min.js"></script>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
 </head>
 <body>
-  <embed src="localstream1234.asx">
+  <big style="font-weight: bold;">Flowplayer test file local</big><br>
+  <!-- Adjust the href value to match your VLC stream origin -->
+  <a href="http://192.168.86.52:8050/stream.flv" style="display:block;width:425px;height:300px;" id="player"></a>
+  <script language="JavaScript"> flowplayer("player", "flowplayer-3.1.4.swf"); </script>
 </body>
 </html>
